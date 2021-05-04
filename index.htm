@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Home-Foundation for Legal and Health Support Initiatives</title>
+<link rel="icon" type="image/png" href="images/logoFoundation.JPEG"  sizes="16x16">
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  padding: 10px; /*some padding */
+  text-align: center; /* center the text */
+  background: #FFFFFF; /* green background */
+  background-image: url('images/logoFoundation.JPEG');
+  background-repeat: no-repeat;
+  background-position: center center;
+   /* background-size: 100% 100%;
+   background-size: Auto 300px;
+    background-size: cover;*/
+    background-size: contain;
+    background-size: round auto;
+  color: white; /* white text color */
+ 
+}
+
+/* Increase the font size of the <h1> element */
+.header h1 {
+  font-size: 40px;
+}
+
+.header .headermaneno{
+  color: #000000
+}
+
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden; /* Hide overflow */
+  background-color: #333; /* Dark background color */
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 20px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+  background-color: #ddd; /* Grey background color */
+  color: black; /* Black text color */
+}
+
+
+/* Ensure proper sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Column container */
+.row { 
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%; /* Set the width of the sidebar */
+  background-color: #f1f1f1; /* Grey background color */
+  padding: 20px; /* Some padding */
+}
+
+/* Main column */
+.main { 
+  flex: 70%; /* Set the width of the main content */
+  background-color: white; /* White background color */
+  padding: 20px; /* Some padding */
+}
+
+
+.container{
+
+   display: grid;
+    grid-gap: 10px;
+     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.box > img {
+  width: 75%;
+}
+
+.box {
+padding: 130px;
+margin: 20px;
+}
+
+
+/*.fakeimg2{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row: 1/-1;
+
+}
+*/
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+   background-image: url('images/');
+   background-repeat: no-repeat;
+  width: 100%;
+  padding: 20px;
+}
+
+.comingimg {
+ /* background-color: #aaa;*/
+   background-image: url('images/coming.png');
+   background-repeat: no-repeat;
+  width: 50%;
+  padding: 20px;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+.sdgicon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*background-color: #aaa;*/
+   background-image: url('images/icon.jpg');
+   background-repeat: no-repeat;
+  width: 50%;
+  padding: 20px;
+
+
+}
+.cheti{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: #aaa; */
+  width: 50%;
+  height: auto;
+  padding: 20px;
+  background-image: url('images/cheti.jpg');
+  background-repeat: no-repeat;
+
+}
+
+
+/* Fake image, just for this example */
+.fakeimg2 {
+  
+  /*background-color: #aaa;*/
+  
+  background-image:url('images/stanley.jpeg');
+   background-repeat: no-repeat;
+
+  
+    
+}
+
+/* Fake image, just for this example */
+.maguimg {
+ 
+  /*background-color: #aaa;*/
+ 
+  background-image:url('images/magu2.jpeg');
+   background-repeat: no-repeat;
+   
+ 
+    
+
+}
+
+/* Fake image, just for this example */
+.shambaniimg {
+ 
+ /* background-color: #aaa;*/
+  
+  background-image:url('images/salasala.jpeg');
+   background-repeat: no-repeat;
+  
+
+}
+
+/* Fake image, just for this example */
+.kiswahiliimg {
+
+  /*background-color: #aaa;*/
+  
+  background-image:url('image/kiswahili.jpg'); 
+   background-repeat: no-repeat;
+ 
+}
+
+/* Fake image, just for this example */
+.chatimg {
+  /*background-color: #aaa;*/
+  
+  background-image:url('images/chat.jpeg');
+   background-repeat: no-repeat;
+   
+}
+
+/* Footer */
+.footer2 {
+  padding: 10px;
+  text-align: center;
+  background: #ddd;
+}
+
+
+/* Footer */
+.footer {
+   background-color: #333;
+   color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+     width:100%;
+    
+  }
+}
+
+
+</style>
+</head>
+
+
+<body>
+
+
+<div class="header"  style="height: 200px;">
+  <h2 class="headermaneno">cdmd,md,cd</h2>
+<!--h1>RATEMA</h1>
+<p>RAFIKI TEHAMA KWA MAENDELEO YA JAMII.</p-->
+<!--p>(Friendly Techonologies For Community Development).</p-->
+</div>
+
+<div class="navbar">
+ <a href="index.htm">Home</a>
+  <a href="project.htm">Projects</a>
+  <a href="aboutus.htm">About Us</a>
+  <a href="contact.htm" class="right">Contacts</a>
+</div>
+
+
+
+
+<div class="row">
+  
+  <div class="main">
+    <h2>FLHSI</h2>
+    <h5>Foundation for Legal and Health Support Initiatives</h5>
+    <!--h5>(Friendly Techonologies For Community Development)</h5-->
+    
+    <p>National sustainable development depends on how the national has invested in its resources. Youth being the potent successor of national development needs investments in capacity building, empowerment and mentorship</p>
+    <p>Poverty escalaration among societies has led to economic difficulties unemployment being the factors that has led many youth to fall in drug addicts. </p>
+
+    <h2>Vision</h2>
+    <p>To envisage a community where Youth potential are realized of utilized for National development.</p>
+
+    <h2>Mission</h2>
+    <p>To enhance Youth well-being through legal aid and health initiatives for sustainable livelihood.</p>
+    
+  
+        <div>
+         
+         <div class="zone container">
+         <!--div class="box zone fakeimg2" style="height:250px;"><a href="project.htm"></a></div-->
+         <div class="box zone fakeimg" style="height:500px;"><a href="project.htm"></a></div>
+         <div class="box zone fakeimg" style="height:500px;"><a href="project.htm"></a></div>
+         <!--div class="box zone kiswahiliimg" style="height:250px;"><a href="project.htm"></a></div-->
+          <div class="box zone fakeimg" style="height:500px;"><a href="project.htm"></a></div>
+         </div>
+       </div>
+
+         <div>
+          <h2>Coming Soon</h2>
+          <h5>Coming soon, June, 2021</h5>
+          <p>..................</p>
+         <!--h3> <a href="project.htm">Coming Soon(May 2020)</a></h3-->
+          <!--div class="comingimg" style="height:200px;"></div-->
+         </div>
+  
+    </div>
+
+<div class="side">
+    <h2>Latest Publications</h2>
+    <h5>Official Launched Foundation for Legal and Health Support Initiatives</h5>
+    <div class="sdgicon" style="height:200px;"></div>
+    <p>...................................</p>
+
+
+    <h5>Certification for Foundation for Legal and Health Support Initiatives:</h5>
+    <div class="cheti" style="height:300px;"></div>
+    <p>Foundation for Legal and Health Support Initiatives receive a registration certicate from the Government</p>
+    
+    
+  </div>
+</div>
+
+<div class="footer2">
+<h2>Partners with:</h2>
+</div>
+
+<br>
+
+<div class="footer">
+  <p>Copyright © 2021 Foundation for Legal and Health Support Initiatives   |   ALL RIGHTS RESERVED </p>
+  
+</div>
+</body>
+</html>
